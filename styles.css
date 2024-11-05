@@ -1,0 +1,337 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #c4b59a;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    background-color: #c4b59a;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Menú Horizontal */
+.menu-horizontal {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #000000;
+    border-radius: 50px;
+    overflow: hidden; 
+}
+
+.menu-horizontal li {
+    margin: 0;
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+.menu-horizontal li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px; 
+    font-size: 0.9em; 
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.menu-horizontal li a:hover {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+@media (max-width: 768px) {
+    .menu-horizontal {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .menu-horizontal li {
+        margin: 5px 0;
+    }
+
+    .menu-horizontal li a {
+        text-align: center;
+        padding: 10px; 
+        width: 100%; 
+    }
+}
+
+.hero {
+    background: url('/Fotos/hero.jpg') no-repeat center center/cover;
+    color: #000;
+    text-align: center;
+    padding: 150px 0;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Asegúrate de ajustar los tamaños de fuente y márgenes */
+.interactive {
+    padding: 20px; /* Espaciado interno para la sección */
+}
+
+.forum-container h4, .forum-container h5, .forum-container h3 {
+    margin: 10px 0; /* Márgenes reducidos para los encabezados */
+}
+
+#new-post {
+    margin-bottom: 20px; /* Espacio entre la sección de crear discusión y las discusiones existentes */
+}
+
+#post-form {
+    display: flex;
+    flex-direction: column; /* Para que los elementos del formulario se apilen verticalmente */
+}
+
+#post-content {
+    resize: none; /* Evitar el cambio de tamaño del textarea */
+    height: 100px; /* Altura específica para el textarea */
+    margin-bottom: 10px; /* Espacio entre el textarea y el botón */
+}
+
+button {
+    padding: 10px 15px; /* Espaciado interno del botón */
+    font-size: 14px; /* Tamaño de fuente del botón */
+}
+
+#posts {
+    margin-top: 20px; /* Espacio encima de la lista de discusiones */
+}
+
+#posts-list {
+    border: 1px solid #ccc; /* Borde para la lista de discusiones */
+    padding: 10px; /* Espaciado interno de la lista */
+    max-height: 300px; /* Altura máxima para la lista, permite el desplazamiento */
+    overflow-y: auto; /* Agrega desplazamiento si hay demasiadas discusiones */
+}
+
+.about, .gallery, .contact {
+    padding: 50px 0;
+}
+
+.about h2, .gallery h2, .contact h2 {
+    text-align: center;
+    color: #000;
+    font-size: 2.5em;
+}
+
+.about p, .contact p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #000;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #c4b59a;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.contact-form {
+    background-color: #c4b59a;
+    padding: 50px 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #0e0d0d;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c4b59a;
+    outline: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #070706;
+    color: #f9f3f3;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #38200c;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 20px;
+    background-color: #392906;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 2px solid #000; /* Bordes más notorios */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para el encabezado */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternado para filas pares */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Color al pasar el ratón sobre las filas */
+}
+
+.back-to-top:hover {
+    background-color: #38200c;
+}
+
+/* Estilo del contenedor principal del slider */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Estilo de las imágenes dentro del slider */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
